@@ -1,0 +1,30 @@
+{% load static %}
+
+<!-- account navbar Start -->
+<nav class="navbar navbar-expand-lg navbar-light bg-white shadow sticky-top p-0" >
+    <a href="/" class="navbar-brand d-flex align-items-center px-4 px-lg-5">
+        <!-- <h2 class="m-0 "><i class="fa fa-book me-3"></i>iQra <br/> School</h2> -->
+        <img class="m-0" src="{% static 'img/iqra.png' %}" alt="" >
+    </a>
+    <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarCollapse">
+        <div class="navbar-nav ms-auto p-4 p-lg-0">
+            <a href="/" class="nav-item nav-link active">Home</a>
+            <a href="{% url 'account/my_courses' %}" class="nav-item nav-link">My Courses</a>
+            <a href="" class="nav-item nav-link">Notes</a>
+
+            <div class="nav-item dropdown">
+                <a href="" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Profile </a>
+                <div class="dropdown-menu fade-down m-0">
+                    <a href="{% url 'account/profile' %}" class="dropdown-item">Profile</a>
+                    <a href=" {% url 'account/edit_profile' %}" class="dropdown-item">edit_profile</a>
+                    <a href="{% url 'logout' %}" class="dropdown-item">Logout</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</nav>
+<!-- account navbar  End -->
+

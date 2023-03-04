@@ -1,0 +1,359 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %} Home {% endblock %}
+
+{% block content %} 
+
+    <!-- Carousel Start -->
+     <div class="container-fluid p-0 mb-5">
+        <div class="owl-carousel header-carousel position-relative">
+            <div class="owl-carousel-item position-relative">
+                <img class="img-fluid" src=" {% static 'img/bg.jpg' %}" alt="">
+                <div class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center" style="background: rgba(24, 29, 56, .7);">
+                    <div class="container">
+                        <div class="row justify-content-start">
+                            <div class="col-sm-10 col-lg-8">
+                                <h5 class="text-primary text-uppercase mb-3 animated slideInDown">Best Online Courses</h5>
+                                <h1 class="display-3 text-white animated slideInDown">The Best Online Learning Platform</h1>
+                                <p class="fs-5 text-white mb-4 pb-2">These platforms offer convenient, flexible, and affordable learning options for students worldwide.</p>
+                                <a href="" class="btn btn-primary py-md-3 px-md-5 me-3 animated slideInLeft">Read More</a>
+                                <a href="{% url 'applyForAdmission' %}" class="btn btn-light py-md-3 px-md-5 animated slideInRight">Join Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="owl-carousel-item position-relative">
+                <img class="img-fluid" src="{% static 'img/bg.jpg' %}" alt="">
+                <div class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center" style="background: rgba(24, 29, 56, .7);">
+                    <div class="container">
+                        <div class="row justify-content-start">
+                            <div class="col-sm-10 col-lg-8">
+                                <h5 class="text-primary text-uppercase mb-3 animated slideInDown">Best Online Courses</h5>
+                                <h1 class="display-3 text-white animated slideInDown">Get Educated Online From Your Home</h1>
+                                <p class="fs-5 text-white mb-4 pb-2">Online learning platforms provide access to education and skills training for individuals around the world.</p>
+                                <a href="" class="btn btn-primary py-md-3 px-md-5 me-3 animated slideInLeft">Read More</a>
+                                <a href="{% url 'applyForAdmission' %}" class="btn btn-light py-md-3 px-md-5 animated slideInRight">Join Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> 
+    <!-- Carousel End -->
+
+    <!-- Service Start -->
+    <div class="container-xxl py-5">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="service-item text-center pt-3">
+                        <div class="p-4">
+                            <i class="fa fa-3x fa-graduation-cap text-primary mb-4"></i>
+                            <h5 class="mb-3">Skilled Instructors</h5>
+                            <p>Experienced educators who guide and teach students with expertise.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="service-item text-center pt-3">
+                        <div class="p-4">
+                            <i class="fa fa-3x fa-globe text-primary mb-4"></i>
+                            <h5 class="mb-3">Online Classes</h5>
+                            <p>Expert-led online programming classes for flexible, convenient learning.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="service-item text-center pt-3">
+                        <div class="p-4">
+                            <i class="fa fa-3x fa-home text-primary mb-4"></i>
+                            <h5 class="mb-3">Home Projects</h5>
+                            <p>Real-world programming projects to apply skills and build a portfolio.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.7s">
+                    <div class="service-item text-center pt-3">
+                        <div class="p-4">
+                            <i class="fa fa-3x fa-book-open text-primary mb-4"></i>
+                            <h5 class="mb-3">Book Library</h5>
+                            <p>A collection of books on various topics for educational and personal development.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Service End -->
+
+    <!-- About Start -->
+    <div class="container-xxl py-5">
+        <div class="container">
+            <div class="row g-5">
+                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s" style="min-height: 400px;">
+                    <div class="position-relative h-100">
+                        <img class="img-fluid position-absolute w-100 h-100" src="{% static 'img/iqra-school.png' %}" alt="" style="object-fit: cover;">
+                    </div>
+                </div>
+                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <h6 class="section-title bg-white text-start text-primary pe-3">About Us</h6>
+                    
+                    <h1 class="mb-4">Welcome to IQRA SCHOOL</h1>
+                    <p class="mb-4">Welcome to the online IQRA School, where we offer an innovative and engaging approach to learning through the use of programming. Our school is dedicated to providing students with a high-quality education that prepares them for success in a rapidly changing world.</p>
+                    <p class="mb-4">Our curriculum is designed to develop critical thinking, problem-solving, and computational skills through the use of programming languages such as Python, Java, and JavaScript. We believe that learning to code is not only a valuable skill in itself, but it also helps students develop important life skills such as perseverance, logical reasoning, and creativity.</p>
+
+                    <div class="row gy-2 gx-4 mb-4">
+
+                        <div class="col-sm-12">
+                            <p class="mb-0"><i class="fa fa-arrow-right text-primary me-2"></i>Online IQRA School uses programming to provide a modern and engaging approach to learning.</p>
+                        </div>
+                        <div class="col-sm-12">
+                            <p class="mb-0"><i class="fa fa-arrow-right text-primary me-2"></i> The curriculum is focused on developing critical thinking, problem-solving, and computational skills through programming languages like Python, Java, and JavaScript. </p>
+                        </div>
+
+                        <div class="col-sm-12">
+                            <p class="mb-0"><i class="fa fa-arrow-right text-primary me-2"></i>Courses are tailored to students of all ages and skill levels, and cover a variety of subjects such as math, science, history, and language arts.</p>
+                        </div>
+
+                        <div class="col-sm-12">
+                            <p class="mb-12"><i class="fa fa-arrow-right text-primary me-2"></i>The platform is designed for students to learn at their own pace and from anywhere in the world, with personalized instruction and support from experienced teachers.</p>
+                        </div>
+                        <div class="col-sm-12">
+                            <p class="mb-0"><i class="fa fa-arrow-right text-primary me-2"></i>IQRA School prioritizes an inclusive and supportive learning environment that prepares students for success in a rapidly changing world.</p>
+                        </div>
+
+                        
+                    </div>
+
+                    <!-- <a class="btn btn-primary py-3 px-5 mt-2" href="">Read More</a> -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- About End -->
+
+    <!-- Categories Start -->
+    <div class="container-xxl py-5 category">
+        <div class="container">
+            <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+                <h6 class="section-title bg-white text-center text-primary px-3">Categories</h6>
+                <h1 class="mb-5">Courses Categories</h1>
+            </div>
+            <div class="row g-3">
+                {% for courses_cat in courses_categories %}
+                    {% if courses_cat %}
+                        {% if forloop.first %}
+                            <div class="col-lg-6 col-md-6 ">
+                                <div class="row g-3">
+                                    <div class="col-lg-12 col-md-12 wow zoomIn" data-wow-delay="0.1s">
+                                        <a class="position-relative d-block overflow-hidden" href="">
+                                            <!-- <img class="img-fluid" src="{% static 'img/cat-1.jpg' %}" alt=""> -->
+                                            {% if courses_cat.image %}
+                                                <td>
+                                                    <!-- <img class="border rounded-circle p-2 mx-auto mb-3" src="{{ student.image.url }}" alt="{{ student.image.url }}"  style="width: 80px; height: 80px;"> -->
+                                                    <img class="img-fluid" src="{{ courses_cat.image.url }}" alt="{{ courses_cat.image.url }}">
+                        
+                                                </td>
+                                            {% else %}
+                                                <td>
+                                                    <img class="img-fluid" src="{% static 'img/cat-1.jpg' %}" alt="">
+                                                </td>
+                                            {% endif %}
+                                            <div class="bg-white text-center position-absolute bottom-0 end-0 py-2 px-3" style="margin: 1px;">
+                                                <h5 class="m-0">{{ courses_cat.course_name }}</h5>
+                                                <small class="text-primary">{{courses_cat.total_course}} Courses</small>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                        {% elif forloop.last %}
+                        <div class="col-lg-5 col-md-6 wow zoomIn "   data-wow-delay="0.7s" style="min-height: 350px;">
+                            <a class="position-relative d-block h-100 overflow-hidden" href="">
+                                <!-- <img class="img-fluid position-absolute w-100 h-100" src="{% static 'img/cat-4.jpg' %}" alt="" style="object-fit: cover;"> -->
+                                
+                                {% if courses_cat.image %}
+                                    <td>
+                                        <img  class="img-fluid position-absolute w-100 h-100" src="{{ courses_cat.image.url }}" alt="{{ courses_cat.image.url }}">
+            
+                                    </td>
+                                {% else %}
+                                    <td>
+                                        <img  class="img-fluid position-absolute w-100 h-100" src="{% static 'img/cat-1.jpg' %}" alt="">
+                                    </td>
+                                {% endif %}
+                                <div class="bg-white text-center position-absolute bottom-0 end-0 py-2 px-3" style="margin:  1px;">
+                                    <h5 class="m-0">{{ courses_cat.course_name }}</h5>
+                                    <small class="text-primary">{{courses_cat.total_course}} Courses</small>
+                                </div>
+                            </a>
+                        </div>
+
+                        {% elif forloop %}
+                            <div class="col-lg-3 col-md-12 wow zoomIn " data-wow-delay="0.3s">
+                                <a class="position-relative d-block overflow-hidden" href="">
+                                    <!-- <img class="img-fluid" src="{% static 'img/cat-2.jpg' %}" alt=""> -->
+                                    {% if courses_cat.image %}
+                                        <td>
+                                            <img  class="img-fluid" src="{{ courses_cat.image.url }}" alt="{{ courses_cat.image.url }}">
+                                        </td>
+                                    {% else %}
+                                        <td>
+                                            <img  class="img-fluid" src="{% static 'img/cat-1.jpg' %}" alt="">
+                                        </td>
+                                    {% endif %}
+                                    <div class="bg-white text-center position-absolute bottom-0 end-0 py-2 px-3" style="margin: 1px;">
+                                        <h5 class="m-0">{{ courses_cat.course_name }}</h5>
+                                        <small class="text-primary">{{courses_cat.total_course}} Courses</small>
+                                    </div>
+                                </a>
+                            </div>
+
+                        {% endif %}
+
+                    {% endif %}
+
+                {% endfor %}
+
+            </div>
+        </div>
+    </div>
+    <!-- Categories Start -->
+
+
+    <!-- Courses Start -->
+    <div class="container-xxl py-5">
+        <div class="container">
+            <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+                <h6 class="section-title bg-white text-center text-primary px-3">Courses</h6>
+                <h1 class="mb-5">Popular Courses</h1>
+            </div>
+            <div class="row g-4 justify-content-center">
+                {% for course in courses %}
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                        <div class="course-item bg-light">
+                            <div class="position-relative overflow-hidden">
+                                {% if course.img %}
+                                    <td>
+                                        <img class="img-fluid" style="width: 100%; height: 237px;" src="{{ course.img.url }}" alt="{{ course.img.url }}" >
+                                    </td>
+                                {% else %}
+                                    <td>
+                                        <img class="img-fluid" src="{% static 'img/course-1.jpg' %}" alt="Course Image">
+                                    </td>
+                                {% endif %}
+
+                                <div class="w-100 d-flex justify-content-center position-absolute bottom-0 start-0 mb-0">
+                                    <a href="#" class="flex-shrink-0 btn btn-sm btn-primary px-3 border-end" style="border-radius: 30px 0 0 30px;">Read More</a>
+                                    <a href="{% url 'applyForAdmission' %}" class="flex-shrink-0 btn btn-sm btn-primary px-3" style="border-radius: 0 30px 30px 0;">Join Now</a>
+                                </div>
+                            </div>
+                            <div class="text-center p-4 pb-0">
+                                <h3 class="mb-0">₹{{ course.fees }}</h3>
+                                <div class="mb-3">
+                                    <small class="fa fa-star text-primary"></small>
+                                    <small class="fa fa-star text-primary"></small>
+                                    <small class="fa fa-star text-primary"></small>
+                                    <small class="fa fa-star text-primary"></small>
+                                    <small class="fa fa-star text-primary"></small>
+                                    <!-- <small>(123)</small> -->
+                                </div>
+                                <!-- <h5 class="mb-4">Web Design & Development Course for Beginners</h5> -->
+                                <h5 class="mb-4">{{ course.course_name }}</h5>
+
+                            </div>
+                            <div class="d-flex border-top">
+                                <small class="flex-fill text-center border-end py-2"><i class="fa fa-user-tie text-primary me-2"></i>{{ course.educator }}</small>
+                                <small class="flex-fill text-center border-end py-2"><i class="fa fa-clock text-primary me-2"></i>{{ course.hours }}</small>
+                                <small class="flex-fill text-center py-2"><i class="fa fa-user text-primary me-2"></i>{{ course.total_student }} Students</small>
+                            </div>
+                        </div>
+                    </div>
+
+                {% endfor %}
+
+
+            </div>
+        </div>
+    </div>
+    <!-- Courses End -->
+
+
+    <!-- Team Start -->
+    <div class="container-xxl py-5">
+        <div class="container">
+            <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+                <h6 class="section-title bg-white text-center text-primary px-3">Instructors</h6>
+                <h1 class="mb-5">Expert Instructors</h1>
+            </div>
+            <div class="row g-4">
+                {% for instructor in instructors %}
+                    <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                        <div class="team-item bg-light">
+                            <div class="overflow-hidden">
+                                <!-- <img class="img-fluid" style="width: 100%; height: 260px;" src="{% static 'img/team-1.jpg' %}" alt=""> -->
+                                {% if instructor.image %}
+                                    <td>
+                                        <img class="img-fluid" style="width: 100%; height: 260px;" src="{{ instructor.image.url }}" alt="{{ cinstructor.image.url }}" >
+                                    </td>
+                                {% else %}
+                                    <td>
+                                        <img class="img-fluid" src="{% static 'img/team-1.jpg' %}" alt="Course Image">
+                                    </td>
+                                {% endif %}
+                            </div>
+                            <div class="position-relative d-flex justify-content-center" style="margin-top: -23px;">
+                                <div class="bg-light d-flex justify-content-center pt-2 px-1">
+                                    <a class="btn btn-sm-square btn-primary mx-1" href="{{ instructor.facebook }}"><i class="fab fa-facebook-f"></i></a>
+                                    <a class="btn btn-sm-square btn-primary mx-1" href="{{ instructor.twitter }}"><i class="fab fa-twitter"></i></a>
+                                    <a class="btn btn-sm-square btn-primary mx-1" href="{{ instructor.instagram }}"><i class="fab fa-instagram"></i></a>
+                                </div>
+                            </div>
+                            <div class="text-center p-4">
+                                <h5 class="mb-0">{{ instructor.name }}</h5>
+                                <small>{{ instructor.designation }}</small>
+                            </div>
+                        </div>
+                    </div>    
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+    <!-- Team End -->
+
+
+    <!-- Testimonial Start -->
+    <div class="container-xxl py-5 wow fadeInUp" data-wow-delay="0.1s">
+        <div class="container">
+            <div class="text-center">
+                <h6 class="section-title bg-white text-center text-primary px-3">Testimonial</h6>
+                <h1 class="mb-5">Our Students Say!</h1>
+            </div>
+            <div class="owl-carousel testimonial-carousel position-relative">
+                {% for student in our_students %}
+                    <div class="testimonial-item text-center">
+                        {% if student.image %}
+                            <td>
+                                <img class="border rounded-circle p-2 mx-auto mb-3" src="{{ student.image.url }}" alt="{{ student.image.url }}"  style="width: 80px; height: 80px;">
+                            </td>
+                        {% else %}
+                            <td>
+                                <img class="border rounded-circle p-2 mx-auto mb-3" src="{% static 'img/testimonial-1.jpg' %}" style="width: 80px; height: 80px;">
+                            </td>
+                        {% endif %}
+                        <h5 class="mb-0">{{ student.name}}</h5>
+                        <p>{{ student.profession}}</p>
+                        <div class="testimonial-text bg-light text-center p-4">
+                        <p class="mb-0">{{ student.description }}</p>
+                        </div>
+                    </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+    <!-- Testimonial End -->
+
+{% endblock %}

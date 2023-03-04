@@ -1,0 +1,23 @@
+{% extends 'account/base_profile.html' %}
+{% load static %}
+{% block title %} profile {% endblock %}
+
+{% block content %} 
+    
+    <!-- profile Start -->
+    <div class="container-xxl py-5">
+        <div class="container text-center">
+            <h1>{{ user.username }}'s Profile</h1>
+            <p>Email: {{ user.email }}</p>
+            <p>First Name: {{ user.first_name }}</p>
+            <p>Last Name: {{ user.last_name }}</p>
+            <p>Profile Picture: <img src="{{ user.profile_picture.url }}" alt="{{ user.username }}'s Profile Picture"></p>
+
+        </div>
+    </div>
+
+    <!-- profile End -->
+{% endblock%}
+
+
+

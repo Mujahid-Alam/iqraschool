@@ -1,0 +1,51 @@
+{% extends 'base.html' %}
+{% load static %}
+
+
+{% block title %} About {% endblock %}
+
+{% block content %} 
+    
+
+    <!-- About Start -->
+    <div class="container-xxl py-5">
+        <div class="container">
+            <div class="row g-5">
+                <div class="col-lg-4 wow fadeInUp" data-wow-delay="0.1s" style="min-height: 400px;">
+                    <div class="position-relative h-100">
+                        <img class="img-fluid position-absolute w-100 h-100" src="{% static 'img/about.jpg' %}" alt="" style="object-fit: cover;">
+                    </div>
+                </div>
+                <div class="col-lg-8 wow fadeInUp" data-wow-delay="0.3s">
+                    <h6 class="section-title bg-white text-start text-primary pe-3">About Us</h6>
+                    <h1 class="mb-4">Welcome to IQRA SCHOOL</h1>
+                    <p class="mb-4">Welcome to the online IQRA School, where we offer an innovative and engaging approach to learning through the use of programming. Our school is dedicated to providing students with a high-quality education that prepares them for success in a rapidly changing world.</p>
+                    <p class="mb-4">Our curriculum is designed to develop critical thinking, problem-solving, and computational skills through the use of programming languages such as Python, Java, and JavaScript. We believe that learning to code is not only a valuable skill in itself, but it also helps students develop important life skills such as perseverance, logical reasoning, and creativity.</p>
+
+                    <div class="row gy-2 gx-4 mb-4">
+                        <div class="col-sm-6">
+                            <p class="mb-0"><i class="fa fa-arrow-right text-primary me-2"></i>Online </p>
+                        </div>
+                        <div class="col-sm-6">
+                            <p class="mb-0"><i class="fa fa-arrow-right text-primary me-2"></i> The  skills  </p>
+                        </div>
+                        <div class="col-sm-6">
+                            <p class="mb-0"><i class="fa fa-arrow-right text-primary me-2"></i> The  skills  </p>
+                        </div>
+                        <div class="col-sm-6">
+                            <p class="mb-0"><i class="fa fa-arrow-right text-primary me-2"></i> The  skills  </p>
+                        </div>
+                        <div class="col-sm-6">
+                            <p class="mb-0"><i class="fa fa-arrow-right text-primary me-2"></i> The  skills  </p>
+                        </div>
+                        <div class="col-sm-6">
+                            <p class="mb-0"><i class="fa fa-arrow-right text-primary me-2"></i> The  skills  </p>
+                        </div>
+                    </div>
+                    <a class="btn btn-primary py-3 px-5 mt-2" href="">Read More..</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- About End -->
+    {% endblock%}
