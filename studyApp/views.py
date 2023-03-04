@@ -62,11 +62,9 @@ def logoutpage(request):
 
 #  Team 
 def team(request):
-    course_data = Courses.objects.all()
     instructors_data = Instructors.objects.all()
     context = {
-        'courses': course_data,
-        'instructor': instructors_data,
+        'instructors': instructors_data,
     }
     return render(request, 'team.html', context)
 
@@ -109,8 +107,6 @@ def applyForAdmission(request):
         return redirect('login')
 
     return render(request, 'applyForAdmission.html',{})
-
-
 
 # Profile 
 @login_required(login_url='login')
